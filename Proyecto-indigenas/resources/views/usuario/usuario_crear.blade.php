@@ -31,9 +31,9 @@
                               <input type="number" class="form-control col-md-15" id="documento" name="documento" placeholder="Ingrese documento">
                             </div>
                             <div class="form-group col-md-6">
-                              <label for=""class="col-md-6">NOMBRE </label>
+                              <label for="nombre" >NOMBRE </label>
                               <input type="text" class="form-control col-md-15" id="nombre" name="nombre" placeholder="digite el nombre">
-                              <label for="nombre">Nombre <span>(required)</span></label>
+                              
                             </div>
                             <div class="form-group col-md-6">
                               <label for=""class="col-md-6">TELEFONO</label>
@@ -83,7 +83,7 @@
       jQuery(document).ready(function () {//clasesin
 
         $.validator.addMethod("letrasEspacios",function(value) {
-                return false;
+                return /^[a-zA-Z\s]*$/.test(value);
               },"Solo puede ingresar letras y espacios"
         );
 
@@ -106,8 +106,7 @@
                   email: true
                 },
                 password:{
-                  required:true,
-                  min: 5
+                  required:true
                 },
 
                
@@ -131,11 +130,13 @@
                 pasword: {
                   required: "El pasword es obligatorio"
                 }
+              },
+              submitHandler : function(form) {
+                  sendform();
               }
             });
     
-            $('#userForm').on('submit',function(event){
-                event.preventDefault();
+            function sendform (){
         
                 let documento = $('#documento').val();
                 let nombre = $('#nombre').val();
@@ -170,7 +171,7 @@
                     alert('Error - ' + errorMessage);
                 }
                 });
-            });
+            };
     
         });
     
