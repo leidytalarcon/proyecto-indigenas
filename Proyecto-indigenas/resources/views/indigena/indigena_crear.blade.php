@@ -139,6 +139,7 @@
                   required: "El telefono es obligatorio",
                   number: "Solo puede ingresar números"
                 },
+                
                
                
               }

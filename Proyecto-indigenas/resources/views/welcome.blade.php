@@ -11,8 +11,7 @@
           <h1>COMUNIDADES INDIGENAS</h1>
           <h2>Los pueblos indígenas son, posiblemente, uno de los grupos de personas más desfavorecidos y vulnerables en el mundo hoy en día </h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=6VbdqX5dJLU&ab_channel=PresidenciadelaRep%C3%BAblica-Colombia" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <a href="https://www.youtube.com/watch?v=6VbdqX5dJLU&ab_channel=PresidenciadelaRep%C3%BAblica-Colombia" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>ver Video</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">

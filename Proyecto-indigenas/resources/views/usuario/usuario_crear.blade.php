@@ -127,8 +127,8 @@
                   required: "El email es obligatorio",
                   email: "debe contener @ y terminar en .com"
                 },
-                pasword: {
-                  required: "El pasword es obligatorio"
+                password: {
+                  required: "El password es obligatorio"
                 }
               },
               submitHandler : function(form) {

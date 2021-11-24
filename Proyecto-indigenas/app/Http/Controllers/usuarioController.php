@@ -46,7 +46,7 @@ class usuarioController extends BaseController
         $usuario['documento'] = $request['documento'];
         $usuario['nombre']=$request['nombre'];
         $usuario['telefono'] =$request['telefono'];
-        $usuario['email'] =$request['ciudad'];         
+        $usuario['email'] =$request['email'];         
        
         $usuario->update();
        
